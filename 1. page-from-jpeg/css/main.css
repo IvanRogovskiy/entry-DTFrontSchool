@@ -1,10 +1,12 @@
 body {
+    margin:0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .header {
+    /* max-width: 100%; */
     height: 200px;
     overflow: hidden;
 }
@@ -20,6 +22,344 @@ body {
 }
 
 .container {
-    width: 984px;
-    justify-content: left;
+    display: flex;
+    margin-top: 48px;
+    width: 1315px;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subtitle {
+    width: 1315px;
+    top: 50px;
+}
+
+.main {
+    margin-top: -24px;
+    /* margin-right: 300px; */
+    width: 70%;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-main {
+    margin-top: -62px;
+}
+
+.logo-main img {
+    border-radius: 50%;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+.contact {
+    display:flex;
+    flex-direction:column;
+    width: 35%;
+    margin-left: 48px;
+    margin-top: -24px;
+}
+
+.personal {
+    display: flex;
+    height: auto;
+    width: auto;
+    margin-top: 24px;
+}
+
+.personal-name {
+    font-size: 21px;
+    padding-left: 15px;
+
+}
+
+.personal-alt {
+    color: #009DF2;
+
+}
+
+
+.avatar-wrapper {
+    height: 48px;
+    width: 47.5px;
+}
+
+.avatar {
+    background-image: url('../assets/gosling.jpg');
+    border-radius:50%;
+    height: 48px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+.follow-us {
+    display: block;
+    flex-direction: column;
+    margin-top: 48px;
+}
+
+.contact-item {
+    margin-top: 12px;
+    display: flex;
+}
+
+.contact-icon-wrapper {
+    height: 24px;
+    width: 24px;
+    width: auto;
+}
+
+.contact-icon-web {
+    height: 24px;
+    width: 24px;
+    background-image: url('../assets/web.svg');
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+.contact-icon-lnkdin {
+    height: 24px;
+    width: 24px;
+    background-image: url('../assets/in.svg');
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+.category-bar {
+    font-size: 18px;
+    width: 1315px;
+    display:flex;
+    justify-content: flex-start;
+    margin: 0;
+    margin-left:-12px;
+    margin-top: -12px
+}
+
+
+
+.category-icon {
+    height: 18px;
+}
+
+.category {
+    display: flex;
+    align-items: top;
+    margin: 0 6px;
+    margin-top: 12px;
+}
+
+.category-title {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color:#f0f0f0;
+    height: 30px
+}
+
+.economy-icon-wrapper {
+    background-color:#5A4D99;
+    background-size: contain;
+    padding: 6px;
+}
+
+.economy-icon {
+    background-image: url('../assets/web.svg');
+    height: 18px;
+    width: 18px;
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+.health-icon-wrapper {
+    background-color:#BFCC36;
+    background-size: contain;
+    padding: 6px;
+}
+
+.health-icon {
+    background-image: url('../assets/culture.svg');
+    height: 18px;
+    width: 18px;
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+.public-icon-wrapper {
+    background-color:#1A587A;
+    background-size: contain;
+    padding: 6px;
+}
+
+.public-icon {
+    background-image: url('../assets/handshake.svg');
+    height: 18px;
+    width: 18px;
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.lorem-cards-block {
+    width: 2560px;
+    height: auto;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 96px;
+}
+
+.search-input-wrapper {
+    background-size: contain;
+    /* margin-right: 150px; */
+    width: 350px;
+    height: 36px;
+}
+
+.search-input {
+    width: 100%;
+}
+
+.search {
+
+    display:block;
+    
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 5px 31px 4px 40px ;
+    background-image: url('../assets/search.svg');
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: left 12px top 50%;
+    border: 1px solid #b2b2b2;
+    border-radius: 4px;
+
+}
+
+.card {
+    height: 600px;
+}
+
+.item-card {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 415px;
+    margin-top: 18px;
+    margin-bottom: 200px;
+    background-color:white;
+}
+
+.card-title {
+    margin-top: 12px;
+    display:flex;
+}
+
+.card-title-logo-wrapper {
+    height: 80px;
+    width: 80px;
+    margin-left: 24px;
+    margin-top:12px;
+}
+
+.card-title-logo {
+    background-image: url('../assets/item-logo.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 80px;
+    border-radius:10%;
+}
+
+.item-card h2 {
+    margin-block-start: 0;
+    margin-top:12px;
+    margin-left: 12px;
+    font-size: 26px;
+}
+
+.card-title-text {
+    margin-left: 48px;
+}
+
+.card-text {
+    margin-top: 18px;
+    margin-right: 36px;
+    margin-left: 24px;
+    font-size: 24px
+}
+
+.card-by {
+    margin-left: 24px;
+    font-size: 21px;
+    font-weight: 100;
+    margin-top:18px;
+}
+
+.category-text-wrapper {
+    border: 3px solid #009DF2;
+    width: 75px;
+    margin-left: 24px;
+    margin-top:24px;
+    border-radius:3px;
+}
+
+.card-category-text {
+    font-size: 18px;
+    color:#009DF2;
+    text-align: center;
+    font-weight: 700;
+}
+
+.card-format {
+    margin-left:24px;
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+.class-card-bottom {
+    display:flex;
+    flex-direction: column;
+    align-items:flex-end;
+    margin-top:145px;
+    margin-right:24px;
+}
+
+.card-view-details {
+    height: 36px;
+    width: auto;
+    padding: 0 24px;
+    margin-top: 18px;
+}
+
+.view-details-button {
+    background-color: #FFA500;
+    border-color: #FFA500;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input::placeholder {
+    font-size: 1.2em;
+  }
+
+
+@media screen and (max-width: 500px) {
+    body {
+        color: red;
+    }
 }
